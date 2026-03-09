@@ -1,0 +1,668 @@
+"Notes"	"County of Residence"	"County of Residence Code"	Births	Total Population	Birth Rate
+	"Baldwin County, AL"	"01003"	2247	208563	10.77
+	"Calhoun County, AL"	"01015"	1357	114611	11.84
+	"Etowah County, AL"	"01055"	1214	102564	11.84
+	"Houston County, AL"	"01069"	1333	104056	12.81
+	"Jefferson County, AL"	"01073"	8655	659521	13.12
+	"Lee County, AL"	"01081"	1898	158991	11.94
+	"Madison County, AL"	"01089"	4228	356967	11.84
+	"Mobile County, AL"	"01097"	5504	414836	13.27
+	"Montgomery County, AL"	"01101"	3139	226349	13.87
+	"Morgan County, AL"	"01103"	1470	119012	12.35
+	"Shelby County, AL"	"01117"	2387	210622	11.33
+	"Tuscaloosa County, AL"	"01125"	2591	206102	12.57
+	"Unidentified Counties, AL"	"01999"	23128	1981106	11.67
+	"Anchorage Borough, AK"	"02020"	4518	298192	15.15
+	"Unidentified Counties, AK"	"02999"	6691	443702	15.08
+	"Cochise County, AZ"	"04003"	1529	125770	12.16
+	"Coconino County, AZ"	"04005"	1612	140908	11.44
+	"Maricopa County, AZ"	"04013"	54126	4242997	12.76
+	"Mohave County, AZ"	"04015"	1802	205249	8.78
+	"Navajo County, AZ"	"04017"	1497	110026	13.61
+	"Pima County, AZ"	"04019"	11421	1016206	11.24
+	"Pinal County, AZ"	"04021"	4470	418540	10.68
+	"Yavapai County, AZ"	"04025"	1868	225562	8.28
+	"Yuma County, AZ"	"04027"	3007	205631	14.62
+	"Unidentified Counties, AZ"	"04999"	3188	240182	13.27
+	"Benton County, AR"	"05007"	3622	258291	14.02
+	"Faulkner County, AR"	"05045"	1534	122227	12.55
+	"Pulaski County, AR"	"05119"	5348	393250	13.60
+	"Saline County, AR"	"05125"	1326	118703	11.17
+	"Sebastian County, AR"	"05131"	1721	127793	13.47
+	"Washington County, AR"	"05143"	3280	228049	14.38
+	"Unidentified Counties, AR"	"05999"	21443	1739935	12.32
+	"Alameda County, CA"	"06001"	19573	1647704	11.88
+	"Butte County, CA"	"06007"	2490	226864	10.98
+	"Contra Costa County, CA"	"06013"	12340	1135127	10.87
+	"El Dorado County, CA"	"06017"	1601	185625	8.62
+	"Fresno County, CA"	"06019"	15129	979915	15.44
+	"Humboldt County, CA"	"06023"	1482	136646	10.85
+	"Imperial County, CA"	"06025"	2939	180883	16.25
+	"Kern County, CA"	"06029"	13728	884788	15.52
+	"Kings County, CA"	"06031"	2248	149785	15.01
+	"Los Angeles County, CA"	"06037"	123092	10137915	12.14
+	"Madera County, CA"	"06039"	2355	154697	15.22
+	"Marin County, CA"	"06041"	2252	260651	8.64
+	"Merced County, CA"	"06047"	4117	268672	15.32
+	"Monterey County, CA"	"06053"	6219	435232	14.29
+	"Napa County, CA"	"06055"	1406	142166	9.89
+	"Orange County, CA"	"06059"	38106	3172532	12.01
+	"Placer County, CA"	"06061"	3732	380531	9.81
+	"Riverside County, CA"	"06065"	30661	2387741	12.84
+	"Sacramento County, CA"	"06067"	19588	1514460	12.93
+	"San Bernardino County, CA"	"06071"	31032	2140096	14.50
+	"San Diego County, CA"	"06073"	42720	3317749	12.88
+	"San Francisco County, CA"	"06075"	9062	870887	10.41
+	"San Joaquin County, CA"	"06077"	10268	733709	13.99
+	"San Luis Obispo County, CA"	"06079"	2581	282887	9.12
+	"San Mateo County, CA"	"06081"	8960	764797	11.72
+	"Santa Barbara County, CA"	"06083"	5501	446170	12.33
+	"Santa Clara County, CA"	"06085"	23042	1919402	12.00
+	"Santa Cruz County, CA"	"06087"	2799	274673	10.19
+	"Shasta County, CA"	"06089"	2048	179631	11.40
+	"Solano County, CA"	"06095"	5259	440207	11.95
+	"Sonoma County, CA"	"06097"	4962	503070	9.86
+	"Stanislaus County, CA"	"06099"	7862	541560	14.52
+	"Tulare County, CA"	"06107"	7146	460437	15.52
+	"Ventura County, CA"	"06111"	9592	849738	11.29
+	"Yolo County, CA"	"06113"	2423	215802	11.23
+	"Unidentified Counties, CA"	"06999"	10512	927268	11.34
+	"Adams County, CO"	"08001"	6672	498187	13.39
+	"Arapahoe County, CO"	"08005"	7910	637068	12.42
+	"Boulder County, CO"	"08013"	2729	322226	8.47
+	"Denver County, CO"	"08031"	10006	693060	14.44
+	"Douglas County, CO"	"08035"	3488	328632	10.61
+	"El Paso County, CO"	"08041"	9490	688284	13.79
+	"Jefferson County, CO"	"08059"	6104	571837	10.67
+	"Larimer County, CO"	"08069"	3375	339993	9.93
+	"Mesa County, CO"	"08077"	1770	150083	11.79
+	"Pueblo County, CO"	"08101"	1883	165123	11.40
+	"Weld County, CO"	"08123"	4306	294932	14.60
+	"Unidentified Counties, CO"	"08999"	8880	851120	10.43
+	"Fairfield County, CT"	"09001"	10064	944177	10.66
+	"Hartford County, CT"	"09003"	9442	892389	10.58
+	"Litchfield County, CT"	"09005"	1422	182571	7.79
+	"Middlesex County, CT"	"09007"	1277	163329	7.82
+	"New Haven County, CT"	"09009"	8886	856875	10.37
+	"New London County, CT"	"09011"	2647	269801	9.81
+	"Tolland County, CT"	"09013"	1175	151118	7.78
+	"Windham County, CT"	"09015"	1102	116192	9.48
+	"Kent County, DE"	"10001"	2190	174827	12.53
+	"New Castle County, DE"	"10003"	6501	556987	11.67
+	"Sussex County, DE"	"10005"	2301	220251	10.45
+	"District of Columbia, DC"	"11001"	9858	681170	14.47
+	"Alachua County, FL"	"12001"	2862	263496	10.86
+	"Bay County, FL"	"12005"	2343	183974	12.74
+	"Brevard County, FL"	"12009"	5273	579130	9.11
+	"Broward County, FL"	"12011"	22563	1909632	11.82
+	"Charlotte County, FL"	"12015"	1037	178465	5.81
+	"Citrus County, FL"	"12017"	1064	143621	7.41
+	"Clay County, FL"	"12019"	2209	208311	10.60
+	"Collier County, FL"	"12021"	3322	365136	9.10
+	"Duval County, FL"	"12031"	13292	926255	14.35
+	"Escambia County, FL"	"12033"	3967	315187	12.59
+	"Hernando County, FL"	"12053"	1585	182835	8.67
+	"Hillsborough County, FL"	"12057"	17325	1376238	12.59
+	"Indian River County, FL"	"12061"	1245	151563	8.21
+	"Lake County, FL"	"12069"	3269	335396	9.75
+	"Lee County, FL"	"12071"	6750	722336	9.34
+	"Leon County, FL"	"12073"	2989	287822	10.38
+	"Manatee County, FL"	"12081"	3445	375888	9.16
+	"Marion County, FL"	"12083"	3472	349020	9.95
+	"Martin County, FL"	"12085"	1273	158701	8.02
+	"Miami-Dade County, FL"	"12086"	32697	2712945	12.05
+	"Okaloosa County, FL"	"12091"	2784	201170	13.84
+	"Orange County, FL"	"12095"	16653	1314367	12.67
+	"Osceola County, FL"	"12097"	4328	336015	12.88
+	"Palm Beach County, FL"	"12099"	14965	1443810	10.36
+	"Pasco County, FL"	"12101"	5108	512368	9.97
+	"Pinellas County, FL"	"12103"	8480	960730	8.83
+	"Polk County, FL"	"12105"	7804	666149	11.72
+	"St. Johns County, FL"	"12109"	2120	235087	9.02
+	"St. Lucie County, FL"	"12111"	2999	306507	9.78
+	"Santa Rosa County, FL"	"12113"	1906	170497	11.18
+	"Sarasota County, FL"	"12115"	2926	412569	7.09
+	"Seminole County, FL"	"12117"	4753	455479	10.44
+	"Volusia County, FL"	"12127"	5032	529364	9.51
+	"Unidentified Counties, FL"	"12999"	13182	1342376	9.82
+	"Bartow County, GA"	"13015"	1338	103807	12.89
+	"Bibb County, GA"	"13021"	2191	152760	14.34
+	"Carroll County, GA"	"13045"	1615	116261	13.89
+	"Chatham County, GA"	"13051"	3975	289082	13.75
+	"Cherokee County, GA"	"13057"	2700	241689	11.17
+	"Clarke County, GA"	"13059"	1392	124707	11.16
+	"Clayton County, GA"	"13063"	3809	279462	13.63
+	"Cobb County, GA"	"13067"	9579	748150	12.80
+	"Columbia County, GA"	"13073"	1831	147450	12.42
+	"Coweta County, GA"	"13077"	1634	140526	11.63
+	"DeKalb County, GA"	"13089"	11060	740321	14.94
+	"Douglas County, GA"	"13097"	1693	142224	11.90
+	"Fayette County, GA"	"13113"	911	111627	8.16
+	"Forsyth County, GA"	"13117"	2297	221009	10.39
+	"Fulton County, GA"	"13121"	13123	1023336	12.82
+	"Gwinnett County, GA"	"13135"	11365	907135	12.53
+	"Hall County, GA"	"13139"	2574	196637	13.09
+	"Henry County, GA"	"13151"	2511	221768	11.32
+	"Houston County, GA"	"13153"	1956	152122	12.86
+	"Lowndes County, GA"	"13185"	1605	114628	14.00
+	"Muscogee County, GA"	"13215"	2912	197485	14.75
+	"Paulding County, GA"	"13223"	1644	155825	10.55
+	"Richmond County, GA"	"13245"	3061	201647	15.18
+	"Whitfield County, GA"	"13313"	1424	104589	13.62
+	"Unidentified Counties, GA"	"13999"	41842	3476124	12.04
+	"Hawaii County, HI"	"15001"	2349	198449	11.84
+	"Honolulu County, HI"	"15003"	12983	992605	13.08
+	"Maui County, HI"	"15009"	1882	165386	11.38
+	"Unidentified Counties, HI"	"15999"	845	72117	11.72
+	"Ada County, ID"	"16001"	5045	444028	11.36
+	"Bonneville County, ID"	"16019"	1910	112232	17.02
+	"Canyon County, ID"	"16027"	3129	211698	14.78
+	"Kootenai County, ID"	"16055"	1754	154311	11.37
+	"Unidentified Counties, ID"	"16999"	10644	760871	13.99
+	"Champaign County, IL"	"17019"	2395	208419	11.49
+	"Cook County, IL"	"17031"	66779	5203499	12.83
+	"DeKalb County, IL"	"17037"	1093	104528	10.46
+	"DuPage County, IL"	"17043"	10832	929368	11.66
+	"Kane County, IL"	"17089"	6710	531715	12.62
+	"Kankakee County, IL"	"17091"	1354	110008	12.31
+	"Kendall County, IL"	"17093"	1595	124695	12.79
+	"Lake County, IL"	"17097"	7660	703047	10.90
+	"LaSalle County, IL"	"17099"	1262	110642	11.41
+	"McHenry County, IL"	"17111"	3090	307004	10.07
+	"McLean County, IL"	"17113"	2020	172418	11.72
+	"Macon County, IL"	"17115"	1327	106550	12.45
+	"Madison County, IL"	"17119"	3051	265759	11.48
+	"Peoria County, IL"	"17143"	2536	185006	13.71
+	"Rock Island County, IL"	"17161"	1776	144784	12.27
+	"St. Clair County, IL"	"17163"	3228	262759	12.29
+	"Sangamon County, IL"	"17167"	2245	197499	11.37
+	"Tazewell County, IL"	"17179"	1496	134385	11.13
+	"Will County, IL"	"17197"	7804	689529	11.32
+	"Winnebago County, IL"	"17201"	3711	285873	12.98
+	"Unidentified Counties, IL"	"17999"	22481	2024052	11.11
+	"Allen County, IN"	"18003"	5151	370404	13.91
+	"Clark County, IN"	"18019"	1448	116031	12.48
+	"Delaware County, IN"	"18035"	1174	115603	10.16
+	"Elkhart County, IN"	"18039"	3126	203781	15.34
+	"Hamilton County, IN"	"18057"	3798	316373	12.00
+	"Hendricks County, IN"	"18063"	1760	160610	10.96
+	"Johnson County, IN"	"18081"	1871	151982	12.31
+	"Lake County, IN"	"18089"	5657	485846	11.64
+	"La Porte County, IN"	"18091"	1305	110015	11.86
+	"Madison County, IN"	"18095"	1506	129296	11.65
+	"Marion County, IN"	"18097"	14294	941229	15.19
+	"Monroe County, IN"	"18105"	1301	145496	8.94
+	"Porter County, IN"	"18127"	1750	167791	10.43
+	"St. Joseph County, IN"	"18141"	3577	269141	13.29
+	"Tippecanoe County, IN"	"18157"	2359	188059	12.54
+	"Vanderburgh County, IN"	"18163"	2269	181721	12.49
+	"Vigo County, IN"	"18167"	1288	107931	11.93
+	"Unidentified Counties, IN"	"18999"	29457	2471744	11.92
+	"Black Hawk County, IA"	"19013"	1671	132904	12.57
+	"Johnson County, IA"	"19103"	1857	146547	12.67
+	"Linn County, IA"	"19113"	2800	221661	12.63
+	"Polk County, IA"	"19153"	6921	474045	14.60
+	"Scott County, IA"	"19163"	2213	172474	12.83
+	"Woodbury County, IA"	"19193"	1549	102779	15.07
+	"Unidentified Counties, IA"	"19999"	22392	1884283	11.88
+	"Douglas County, KS"	"20045"	1177	119440	9.85
+	"Johnson County, KS"	"20091"	7360	584451	12.59
+	"Sedgwick County, KS"	"20173"	7309	511995	14.28
+	"Shawnee County, KS"	"20177"	2189	178146	12.29
+	"Wyandotte County, KS"	"20209"	2695	163831	16.45
+	"Unidentified Counties, KS"	"20999"	17323	1349426	12.84
+	"Boone County, KY"	"21015"	1681	128536	13.08
+	"Fayette County, KY"	"21067"	4090	318449	12.84
+	"Hardin County, KY"	"21093"	1441	107316	13.43
+	"Jefferson County, KY"	"21111"	9889	765352	12.92
+	"Kenton County, KY"	"21117"	2329	164945	14.12
+	"Warren County, KY"	"21227"	1640	125532	13.06
+	"Unidentified Counties, KY"	"21999"	34379	2826844	12.16
+	"Ascension Parish, LA"	"22005"	1751	121587	14.40
+	"Bossier Parish, LA"	"22015"	1751	126057	13.89
+	"Caddo Parish, LA"	"22017"	3364	248851	13.52
+	"Calcasieu Parish, LA"	"22019"	3034	200601	15.12
+	"East Baton Rouge Parish, LA"	"22033"	6125	447037	13.70
+	"Jefferson Parish, LA"	"22051"	5887	436523	13.49
+	"Lafayette Parish, LA"	"22055"	3369	241398	13.96
+	"Livingston Parish, LA"	"22063"	1921	140138	13.71
+	"Orleans Parish, LA"	"22071"	4835	391495	12.35
+	"Ouachita Parish, LA"	"22073"	2224	156983	14.17
+	"Rapides Parish, LA"	"22079"	1840	132424	13.89
+	"St. Tammany Parish, LA"	"22103"	3089	253602	12.18
+	"Tangipahoa Parish, LA"	"22105"	1984	130710	15.18
+	"Terrebonne Parish, LA"	"22109"	1570	113220	13.87
+	"Unidentified Counties, LA"	"22999"	20434	1541040	13.26
+	"Androscoggin County, ME"	"23001"	1247	107319	11.62
+	"Cumberland County, ME"	"23005"	2830	292041	9.69
+	"Kennebec County, ME"	"23011"	1164	120569	9.65
+	"Penobscot County, ME"	"23019"	1483	151806	9.77
+	"York County, ME"	"23031"	1898	202343	9.38
+	"Unidentified Counties, ME"	"23999"	4083	457401	8.93
+	"Anne Arundel County, MD"	"24003"	6967	568346	12.26
+	"Baltimore County, MD"	"24005"	9838	831026	11.84
+	"Carroll County, MD"	"24013"	1737	167656	10.36
+	"Cecil County, MD"	"24015"	1106	102603	10.78
+	"Charles County, MD"	"24017"	1812	157705	11.49
+	"Frederick County, MD"	"24021"	2839	247591	11.47
+	"Harford County, MD"	"24025"	2699	251032	10.75
+	"Howard County, MD"	"24027"	3569	317233	11.25
+	"Montgomery County, MD"	"24031"	13123	1043863	12.57
+	"Prince George's County, MD"	"24033"	12296	908049	13.54
+	"St. Mary's County, MD"	"24037"	1425	112587	12.66
+	"Washington County, MD"	"24043"	1694	150292	11.27
+	"Baltimore city, MD"	"24510"	8504	614664	13.84
+	"Unidentified Counties, MD"	"24999"	5527	543800	10.16
+	"Barnstable County, MA"	"25001"	1601	214276	7.47
+	"Berkshire County, MA"	"25003"	1027	126903	8.09
+	"Bristol County, MA"	"25005"	5643	558324	10.11
+	"Essex County, MA"	"25009"	8386	779018	10.76
+	"Hampden County, MA"	"25013"	4956	468467	10.58
+	"Hampshire County, MA"	"25015"	1009	161816	6.24
+	"Middlesex County, MA"	"25017"	17198	1589774	10.82
+	"Norfolk County, MA"	"25021"	7341	697181	10.53
+	"Plymouth County, MA"	"25023"	5135	513565	10.00
+	"Suffolk County, MA"	"25025"	9384	784230	11.97
+	"Worcester County, MA"	"25027"	8678	819589	10.59
+	"Unidentified Counties, MA"	"25999"	959	98636	9.72
+	"Allegan County, MI"	"26005"	1364	115548	11.80
+	"Bay County, MI"	"26017"	1061	104747	10.13
+	"Berrien County, MI"	"26021"	1720	154010	11.17
+	"Calhoun County, MI"	"26025"	1660	134386	12.35
+	"Eaton County, MI"	"26045"	1139	109160	10.43
+	"Genesee County, MI"	"26049"	4819	408615	11.79
+	"Ingham County, MI"	"26065"	3414	288051	11.85
+	"Jackson County, MI"	"26075"	1778	158460	11.22
+	"Kalamazoo County, MI"	"26077"	3163	261654	12.09
+	"Kent County, MI"	"26081"	8811	642173	13.72
+	"Livingston County, MI"	"26093"	1783	188624	9.45
+	"Macomb County, MI"	"26099"	9416	867730	10.85
+	"Monroe County, MI"	"26115"	1526	149208	10.23
+	"Muskegon County, MI"	"26121"	2127	173408	12.27
+	"Oakland County, MI"	"26125"	13665	1243970	10.98
+	"Ottawa County, MI"	"26139"	3441	282250	12.19
+	"Saginaw County, MI"	"26145"	2190	192326	11.39
+	"St. Clair County, MI"	"26147"	1589	159587	9.96
+	"Washtenaw County, MI"	"26161"	3692	364709	10.12
+	"Wayne County, MI"	"26163"	23149	1749366	13.23
+	"Unidentified Counties, MI"	"26999"	21808	2180318	10.00
+	"Anoka County, MN"	"27003"	4223	345957	12.21
+	"Dakota County, MN"	"27037"	5291	417486	12.67
+	"Hennepin County, MN"	"27053"	16495	1232483	13.38
+	"Olmsted County, MN"	"27109"	2122	153102	13.86
+	"Ramsey County, MN"	"27123"	7731	540649	14.30
+	"St. Louis County, MN"	"27137"	1976	199980	9.88
+	"Scott County, MN"	"27139"	1893	143680	13.18
+	"Stearns County, MN"	"27145"	2038	155652	13.09
+	"Washington County, MN"	"27163"	2898	253117	11.45
+	"Wright County, MN"	"27171"	1787	132550	13.48
+	"Unidentified Counties, MN"	"27999"	23295	1945296	11.98
+	"DeSoto County, MS"	"28033"	2191	175611	12.48
+	"Harrison County, MS"	"28047"	2790	203234	13.73
+	"Hinds County, MS"	"28049"	3123	241229	12.95
+	"Jackson County, MS"	"28059"	1651	141241	11.69
+	"Rankin County, MS"	"28121"	1802	150228	12.00
+	"Unidentified Counties, MS"	"28999"	26371	2077183	12.70
+	"Boone County, MO"	"29019"	2093	176594	11.85
+	"Clay County, MO"	"29047"	2962	239085	12.39
+	"Franklin County, MO"	"29071"	1248	102838	12.14
+	"Greene County, MO"	"29077"	3579	288690	12.40
+	"Jackson County, MO"	"29095"	9408	691801	13.60
+	"Jasper County, MO"	"29097"	1669	119111	14.01
+	"Jefferson County, MO"	"29099"	2633	224226	11.74
+	"St. Charles County, MO"	"29183"	4487	390918	11.48
+	"St. Louis County, MO"	"29189"	11692	998581	11.71
+	"St. Louis city, MO"	"29510"	4317	311404	13.86
+	"Unidentified Counties, MO"	"29999"	30617	2549752	12.01
+	"Missoula County, MT"	"30063"	1187	116130	10.22
+	"Yellowstone County, MT"	"30111"	1935	158437	12.21
+	"Unidentified Counties, MT"	"30999"	9160	767953	11.93
+	"Douglas County, NE"	"31055"	8832	554995	15.91
+	"Lancaster County, NE"	"31109"	4019	309637	12.98
+	"Sarpy County, NE"	"31153"	2464	179023	13.76
+	"Unidentified Counties, NE"	"31999"	11274	863461	13.06
+	"Clark County, NV"	"32003"	27388	2155664	12.71
+	"Washoe County, NV"	"32031"	5387	453616	11.88
+	"Unidentified Counties, NV"	"32999"	3485	330778	10.54
+	"Hillsborough County, NH"	"33011"	4240	407761	10.40
+	"Merrimack County, NH"	"33013"	1284	148582	8.64
+	"Rockingham County, NH"	"33015"	2654	303251	8.75
+	"Strafford County, NH"	"33017"	1211	127428	9.50
+	"Unidentified Counties, NH"	"33999"	2878	347773	8.28
+	"Atlantic County, NJ"	"34001"	2836	270991	10.47
+	"Bergen County, NJ"	"34003"	9464	939151	10.08
+	"Burlington County, NJ"	"34005"	4419	449284	9.84
+	"Camden County, NJ"	"34007"	6226	510150	12.20
+	"Cumberland County, NJ"	"34011"	1876	153797	12.20
+	"Essex County, NJ"	"34013"	10442	796914	13.10
+	"Gloucester County, NJ"	"34015"	2837	292330	9.70
+	"Hudson County, NJ"	"34017"	10383	677983	15.31
+	"Hunterdon County, NJ"	"34019"	927	124676	7.44
+	"Mercer County, NJ"	"34021"	4280	371023	11.54
+	"Middlesex County, NJ"	"34023"	9332	837073	11.15
+	"Monmouth County, NJ"	"34025"	5960	625846	9.52
+	"Morris County, NJ"	"34027"	4633	498423	9.30
+	"Ocean County, NJ"	"34029"	8566	592497	14.46
+	"Passaic County, NJ"	"34031"	6842	507945	13.47
+	"Somerset County, NJ"	"34035"	3251	333751	9.74
+	"Sussex County, NJ"	"34037"	1180	142522	8.28
+	"Union County, NJ"	"34039"	6756	555630	12.16
+	"Warren County, NJ"	"34041"	958	106617	8.99
+	"Unidentified Counties, NJ"	"34999"	1479	157866	9.37
+	"Bernalillo County, NM"	"35001"	7574	676953	11.19
+	"Dona Ana County, NM"	"35013"	2839	214207	13.25
+	"Sandoval County, NM"	"35043"	1464	142025	10.31
+	"San Juan County, NM"	"35045"	1726	115079	15.00
+	"Santa Fe County, NM"	"35049"	1290	148651	8.68
+	"Unidentified Counties, NM"	"35999"	9799	784100	12.50
+	"Albany County, NY"	"36001"	3045	308846	9.86
+	"Bronx County, NY"	"36005"	21161	1455720	14.54
+	"Broome County, NY"	"36007"	1985	195334	10.16
+	"Chautauqua County, NY"	"36013"	1345	129504	10.39
+	"Dutchess County, NY"	"36027"	2519	294473	8.55
+	"Erie County, NY"	"36029"	9916	921046	10.77
+	"Jefferson County, NY"	"36045"	1891	114006	16.59
+	"Kings County, NY"	"36047"	40802	2629150	15.52
+	"Monroe County, NY"	"36055"	8004	747727	10.70
+	"Nassau County, NY"	"36059"	14329	1361500	10.52
+	"New York County, NY"	"36061"	17587	1643734	10.70
+	"Niagara County, NY"	"36063"	2139	211758	10.10
+	"Oneida County, NY"	"36065"	2497	231190	10.80
+	"Onondaga County, NY"	"36067"	5242	466194	11.24
+	"Ontario County, NY"	"36069"	997	109828	9.08
+	"Orange County, NY"	"36071"	4993	379210	13.17
+	"Oswego County, NY"	"36075"	1331	118987	11.19
+	"Queens County, NY"	"36081"	30377	2333054	13.02
+	"Rensselaer County, NY"	"36083"	1726	160070	10.78
+	"Richmond County, NY"	"36085"	5464	476015	11.48
+	"Rockland County, NY"	"36087"	5440	326780	16.65
+	"St. Lawrence County, NY"	"36089"	1083	110038	9.84
+	"Saratoga County, NY"	"36091"	2210	227053	9.73
+	"Schenectady County, NY"	"36093"	1770	154553	11.45
+	"Suffolk County, NY"	"36103"	15559	1492583	10.42
+	"Tompkins County, NY"	"36109"	787	104871	7.50
+	"Ulster County, NY"	"36111"	1482	179225	8.27
+	"Westchester County, NY"	"36119"	10280	974542	10.55
+	"Unidentified Counties, NY"	"36999"	18322	1888298	9.70
+	"Alamance County, NC"	"37001"	1856	159688	11.62
+	"Brunswick County, NC"	"37019"	978	126953	7.70
+	"Buncombe County, NC"	"37021"	2595	256088	10.13
+	"Cabarrus County, NC"	"37025"	2477	201590	12.29
+	"Catawba County, NC"	"37035"	1664	156459	10.64
+	"Craven County, NC"	"37049"	1438	103445	13.90
+	"Cumberland County, NC"	"37051"	5446	327127	16.65
+	"Davidson County, NC"	"37057"	1771	164926	10.74
+	"Durham County, NC"	"37063"	4346	306212	14.19
+	"Forsyth County, NC"	"37067"	4496	371511	12.10
+	"Gaston County, NC"	"37071"	2524	216965	11.63
+	"Guilford County, NC"	"37081"	6259	521330	12.01
+	"Harnett County, NC"	"37085"	1861	130881	14.22
+	"Henderson County, NC"	"37089"	1089	114209	9.54
+	"Iredell County, NC"	"37097"	1923	172916	11.12
+	"Johnston County, NC"	"37101"	2336	191450	12.20
+	"Mecklenburg County, NC"	"37119"	14881	1054835	14.11
+	"New Hanover County, NC"	"37129"	2241	223483	10.03
+	"Onslow County, NC"	"37133"	3960	187136	21.16
+	"Orange County, NC"	"37135"	1166	141796	8.22
+	"Pitt County, NC"	"37147"	2023	177220	11.42
+	"Randolph County, NC"	"37151"	1600	143416	11.16
+	"Robeson County, NC"	"37155"	1775	133235	13.32
+	"Rowan County, NC"	"37159"	1651	139933	11.80
+	"Union County, NC"	"37179"	2415	226606	10.66
+	"Wake County, NC"	"37183"	13018	1046791	12.44
+	"Wayne County, NC"	"37191"	1636	124150	13.18
+	"Unidentified Counties, NC"	"37999"	31354	3026437	10.36
+	"Cass County, ND"	"38017"	2639	175249	15.06
+	"Unidentified Counties, ND"	"38999"	8744	582703	15.01
+	"Allen County, OH"	"39003"	1257	103742	12.12
+	"Ashtabula County, OH"	"39007"	1075	98231	10.94
+	"Butler County, OH"	"39017"	4452	377537	11.79
+	"Clark County, OH"	"39023"	1532	134786	11.37
+	"Clermont County, OH"	"39025"	2293	203022	11.29
+	"Columbiana County, OH"	"39029"	1070	103685	10.32
+	"Cuyahoga County, OH"	"39035"	14758	1249352	11.81
+	"Delaware County, OH"	"39041"	2079	196463	10.58
+	"Fairfield County, OH"	"39045"	1629	152597	10.68
+	"Franklin County, OH"	"39049"	19045	1264518	15.06
+	"Greene County, OH"	"39057"	1808	164765	10.97
+	"Hamilton County, OH"	"39061"	10820	809099	13.37
+	"Lake County, OH"	"39085"	2163	228614	9.46
+	"Licking County, OH"	"39089"	2075	172198	12.05
+	"Lorain County, OH"	"39093"	3295	306365	10.76
+	"Lucas County, OH"	"39095"	5627	432488	13.01
+	"Mahoning County, OH"	"39099"	2506	230008	10.90
+	"Medina County, OH"	"39103"	1816	177221	10.25
+	"Miami County, OH"	"39109"	1227	104679	11.72
+	"Montgomery County, OH"	"39113"	6631	531239	12.48
+	"Portage County, OH"	"39133"	1441	161921	8.90
+	"Richland County, OH"	"39139"	1328	121107	10.97
+	"Stark County, OH"	"39151"	4236	373612	11.34
+	"Summit County, OH"	"39153"	5996	540300	11.10
+	"Trumbull County, OH"	"39155"	2101	201825	10.41
+	"Warren County, OH"	"39165"	2400	227063	10.57
+	"Wayne County, OH"	"39169"	1487	116470	12.77
+	"Wood County, OH"	"39173"	1365	130219	10.48
+	"Unidentified Counties, OH"	"39999"	30573	2701247	11.32
+	"Canadian County, OK"	"40017"	1781	136532	13.04
+	"Cleveland County, OK"	"40027"	3016	278655	10.82
+	"Comanche County, OK"	"40031"	1757	122136	14.39
+	"Oklahoma County, OK"	"40109"	12197	782970	15.58
+	"Tulsa County, OK"	"40143"	9639	642940	14.99
+	"Unidentified Counties, OK"	"40999"	24202	1960328	12.35
+	"Clackamas County, OR"	"41005"	4199	408062	10.29
+	"Deschutes County, OR"	"41017"	1806	181307	9.96
+	"Douglas County, OR"	"41019"	1087	108457	10.02
+	"Jackson County, OR"	"41029"	2294	216527	10.59
+	"Lane County, OR"	"41039"	3554	369519	9.62
+	"Linn County, OR"	"41043"	1521	122849	12.38
+	"Marion County, OR"	"41047"	4539	336316	13.50
+	"Multnomah County, OR"	"41051"	9081	799766	11.35
+	"Washington County, OR"	"41067"	6983	582779	11.98
+	"Unidentified Counties, OR"	"41999"	10471	967883	10.82
+	"Adams County, PA"	"42001"	922	102180	9.02
+	"Allegheny County, PA"	"42003"	13164	1225365	10.74
+	"Beaver County, PA"	"42007"	1676	167429	10.01
+	"Berks County, PA"	"42011"	4786	414812	11.54
+	"Blair County, PA"	"42013"	1270	124650	10.19
+	"Bucks County, PA"	"42017"	5958	626399	9.51
+	"Butler County, PA"	"42019"	1833	186847	9.81
+	"Cambria County, PA"	"42021"	1357	134732	10.07
+	"Centre County, PA"	"42027"	1208	161464	7.48
+	"Chester County, PA"	"42029"	5325	516312	10.31
+	"Cumberland County, PA"	"42041"	2683	248506	10.80
+	"Dauphin County, PA"	"42043"	3437	273707	12.56
+	"Delaware County, PA"	"42045"	6575	563402	11.67
+	"Erie County, PA"	"42049"	3064	276207	11.09
+	"Fayette County, PA"	"42051"	1351	132733	10.18
+	"Franklin County, PA"	"42055"	1875	153851	12.19
+	"Lackawanna County, PA"	"42069"	2246	211321	10.63
+	"Lancaster County, PA"	"42071"	7000	538500	13.00
+	"Lebanon County, PA"	"42075"	1592	138863	11.46
+	"Lehigh County, PA"	"42077"	4253	363147	11.71
+	"Luzerne County, PA"	"42079"	3193	316383	10.09
+	"Lycoming County, PA"	"42081"	1222	115248	10.60
+	"Mercer County, PA"	"42085"	1165	112913	10.32
+	"Monroe County, PA"	"42089"	1477	166098	8.89
+	"Montgomery County, PA"	"42091"	8695	821725	10.58
+	"Northampton County, PA"	"42095"	2831	302294	9.37
+	"Philadelphia County, PA"	"42101"	21506	1567872	13.72
+	"Schuylkill County, PA"	"42107"	1367	143573	9.52
+	"Washington County, PA"	"42125"	2044	207981	9.83
+	"Westmoreland County, PA"	"42129"	2939	355458	8.27
+	"York County, PA"	"42133"	4974	443744	11.21
+	"Unidentified Counties, PA"	"42999"	16421	1670511	9.83
+	"Kent County, RI"	"44003"	1565	164614	9.51
+	"Providence County, RI"	"44007"	7275	633673	11.48
+	"Washington County, RI"	"44009"	929	126288	7.36
+	"Unidentified Counties, RI"	"44999"	1029	131851	7.80
+	"Aiken County, SC"	"45003"	1965	167458	11.73
+	"Anderson County, SC"	"45007"	2318	196569	11.79
+	"Beaufort County, SC"	"45013"	1958	183149	10.69
+	"Berkeley County, SC"	"45015"	2754	210898	13.06
+	"Charleston County, SC"	"45019"	5015	396484	12.65
+	"Dorchester County, SC"	"45035"	1800	153773	11.71
+	"Florence County, SC"	"45041"	1657	138742	11.94
+	"Greenville County, SC"	"45045"	6298	498766	12.63
+	"Horry County, SC"	"45051"	3118	322342	9.67
+	"Lexington County, SC"	"45063"	3264	286196	11.40
+	"Pickens County, SC"	"45077"	1225	122863	9.97
+	"Richland County, SC"	"45079"	4810	409549	11.74
+	"Spartanburg County, SC"	"45083"	3690	301463	12.24
+	"Sumter County, SC"	"45085"	1375	107396	12.80
+	"York County, SC"	"45091"	3011	258526	11.65
+	"Unidentified Counties, SC"	"45999"	13084	1206945	10.84
+	"Minnehaha County, SD"	"46099"	2937	187318	15.68
+	"Pennington County, SD"	"46103"	1471	109372	13.45
+	"Unidentified Counties, SD"	"46999"	7867	568764	13.83
+	"Blount County, TN"	"47009"	1229	128670	9.55
+	"Davidson County, TN"	"47037"	10023	684410	14.64
+	"Hamilton County, TN"	"47065"	4293	357738	12.00
+	"Knox County, TN"	"47093"	5272	456132	11.56
+	"Montgomery County, TN"	"47125"	3443	195734	17.59
+	"Rutherford County, TN"	"47149"	4130	308251	13.40
+	"Shelby County, TN"	"47157"	13234	934603	14.16
+	"Sullivan County, TN"	"47163"	1492	156667	9.52
+	"Sumner County, TN"	"47165"	2053	180063	11.40
+	"Washington County, TN"	"47179"	1292	127440	10.14
+	"Williamson County, TN"	"47187"	2270	219107	10.36
+	"Wilson County, TN"	"47189"	1527	132781	11.50
+	"Unidentified Counties, TN"	"47999"	30549	2769598	11.03
+	"Bell County, TX"	"48027"	6140	340411	18.04
+	"Bexar County, TX"	"48029"	27968	1928680	14.50
+	"Brazoria County, TX"	"48039"	4800	354195	13.55
+	"Brazos County, TX"	"48041"	2771	220417	12.57
+	"Cameron County, TX"	"48061"	6893	422135	16.33
+	"Collin County, TX"	"48085"	11086	939585	11.80
+	"Comal County, TX"	"48091"	1448	134788	10.74
+	"Dallas County, TX"	"48113"	40379	2574984	15.68
+	"Denton County, TX"	"48121"	10195	806180	12.65
+	"Ector County, TX"	"48135"	2814	157462	17.87
+	"Ellis County, TX"	"48139"	2244	168499	13.32
+	"El Paso County, TX"	"48141"	13073	837918	15.60
+	"Fort Bend County, TX"	"48157"	9976	741237	13.46
+	"Galveston County, TX"	"48167"	4167	329431	12.65
+	"Grayson County, TX"	"48181"	1543	128235	12.03
+	"Gregg County, TX"	"48183"	1743	123745	14.09
+	"Guadalupe County, TX"	"48187"	1847	155265	11.90
+	"Harris County, TX"	"48201"	72420	4589928	15.78
+	"Hays County, TX"	"48209"	2502	204470	12.24
+	"Hidalgo County, TX"	"48215"	14982	849843	17.63
+	"Jefferson County, TX"	"48245"	3578	254679	14.05
+	"Johnson County, TX"	"48251"	2100	163274	12.86
+	"Kaufman County, TX"	"48257"	1663	118350	14.05
+	"Lubbock County, TX"	"48303"	4273	303137	14.10
+	"McLennan County, TX"	"48309"	3376	247934	13.62
+	"Midland County, TX"	"48329"	2904	162565	17.86
+	"Montgomery County, TX"	"48339"	7347	556203	13.21
+	"Nueces County, TX"	"48355"	4738	361350	13.11
+	"Parker County, TX"	"48367"	1538	129441	11.88
+	"Potter County, TX"	"48375"	1886	120832	15.61
+	"Randall County, TX"	"48381"	1640	132501	12.38
+	"Smith County, TX"	"48423"	3160	225290	14.03
+	"Tarrant County, TX"	"48439"	28745	2016872	14.25
+	"Taylor County, TX"	"48441"	2037	136535	14.92
+	"Tom Green County, TX"	"48451"	1556	118386	13.14
+	"Travis County, TX"	"48453"	15992	1199323	13.33
+	"Webb County, TX"	"48479"	5189	271193	19.13
+	"Wichita County, TX"	"48485"	1631	131838	12.37
+	"Williamson County, TX"	"48491"	6535	528718	12.36
+	"Unidentified Counties, TX"	"48999"	59168	4676767	12.65
+	"Cache County, UT"	"49005"	2286	122753	18.62
+	"Davis County, UT"	"49011"	5698	342281	16.65
+	"Salt Lake County, UT"	"49035"	17612	1121354	15.71
+	"Utah County, UT"	"49049"	11971	592299	20.21
+	"Washington County, UT"	"49053"	2210	160245	13.79
+	"Weber County, UT"	"49057"	3876	247560	15.66
+	"Unidentified Counties, UT"	"49999"	6811	464725	14.66
+	"Chittenden County, VT"	"50007"	1552	161531	9.61
+	"Unidentified Counties, VT"	"50999"	4204	463063	9.08
+	"Arlington County, VA"	"51013"	3225	230050	14.02
+	"Chesterfield County, VA"	"51041"	3885	339009	11.46
+	"Fairfax County, VA"	"51059"	14525	1138652	12.76
+	"Henrico County, VA"	"51087"	3903	326501	11.95
+	"Loudoun County, VA"	"51107"	5335	385945	13.82
+	"Prince William County, VA"	"51153"	6845	455210	15.04
+	"Spotsylvania County, VA"	"51177"	1542	132010	11.68
+	"Stafford County, VA"	"51179"	1711	144361	11.85
+	"Alexandria city, VA"	"51510"	2823	155810	18.12
+	"Chesapeake city, VA"	"51550"	2877	237940	12.09
+	"Hampton city, VA"	"51650"	1727	135410	12.75
+	"Newport News city, VA"	"51700"	2814	181825	15.48
+	"Norfolk city, VA"	"51710"	3547	245115	14.47
+	"Richmond city, VA"	"51760"	3028	223170	13.57
+	"Virginia Beach city, VA"	"51810"	5925	452602	13.09
+	"Unidentified Counties, VA"	"51999"	38748	3628198	10.68
+	"Benton County, WA"	"53005"	2759	193686	14.24
+	"Clark County, WA"	"53011"	5665	467018	12.13
+	"Cowlitz County, WA"	"53015"	1285	105160	12.22
+	"King County, WA"	"53033"	26022	2149970	12.10
+	"Kitsap County, WA"	"53035"	3147	264811	11.88
+	"Pierce County, WA"	"53053"	11756	861312	13.65
+	"Skagit County, WA"	"53057"	1515	123681	12.25
+	"Snohomish County, WA"	"53061"	10041	787620	12.75
+	"Spokane County, WA"	"53063"	6145	499072	12.31
+	"Thurston County, WA"	"53067"	3205	275222	11.65
+	"Whatcom County, WA"	"53073"	2279	216800	10.51
+	"Yakima County, WA"	"53077"	3935	249636	15.76
+	"Unidentified Counties, WA"	"53999"	12751	1094012	11.66
+	"Berkeley County, WV"	"54003"	1393	113525	12.27
+	"Kanawha County, WV"	"54039"	1968	186241	10.57
+	"Unidentified Counties, WV"	"54999"	15718	1531336	10.26
+	"Brown County, WI"	"55009"	3336	260401	12.81
+	"Dane County, WI"	"55025"	6052	531273	11.39
+	"Fond du Lac County, WI"	"55039"	1031	102144	10.09
+	"Kenosha County, WI"	"55059"	1936	168183	11.51
+	"La Crosse County, WI"	"55063"	1188	118122	10.06
+	"Marathon County, WI"	"55073"	1635	135603	12.06
+	"Milwaukee County, WI"	"55079"	13658	951448	14.35
+	"Outagamie County, WI"	"55087"	2319	184526	12.57
+	"Racine County, WI"	"55101"	2417	195140	12.39
+	"Rock County, WI"	"55105"	2003	161620	12.39
+	"Sheboygan County, WI"	"55117"	1257	115427	10.89
+	"Walworth County, WI"	"55127"	967	102959	9.39
+	"Washington County, WI"	"55131"	1331	134296	9.91
+	"Waukesha County, WI"	"55133"	4008	398424	10.06
+	"Winnebago County, WI"	"55139"	1905	169886	11.21
+	"Unidentified Counties, WI"	"55999"	21572	2049256	10.53
+	"Unidentified Counties, WY"	"56999"	7386	585501	12.61
+"Total"			3945875	323127513	12.21
+"---"
+"Dataset: Natality, 2016-2017 expanded"
+"Query Parameters:"
+"Year: 2016"
+"Group By: County of Residence"
+"Show Totals: True"
+"Show Zero Values: True"
+"Show Suppressed: False"
+"Calculate Rates Per: 1,000"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality-expanded.html for more information."
+"---"
+"Query Date: Sep 18, 2019 3:15:05 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2016-2017, on CDC"
+"WONDER Online Database, October 2018. Accessed at http://wonder.cdc.gov/natality-expanded-current.html on Sep 18, 2019 3:15:05"
+"PM"
+"---"
+Caveats:
+"1. Each birth record represents one living baby."
+"2. County-level data are shown only for counties with populations of 100,000 persons or more. Within each state, data for all"
+"counties with fewer than 100,000 persons are combined together under the label ""Unidentified Counties."""
+"3. Birth rates are calculated as the number of births divided by total population in the given year(s). When the numerator is"
+"sub-set by mother's race, mother's hispanicity, location, or year of birth, then the same sub-set for age, race, hispanicity,"
+"location and year applies to the denominator population."
+"4. Birth rates and fertility rates are calculated using the following populations: The populations for year 2017 are from the"
+"postcensal single-race series of July 1st estimates of the resident population, released by Census Bureau on June 21, 2018; and"
+"the postcensal bridged-race series of July 1st estimates of the resident population, released by NCHS on June 27, 2018. The"
+"populations for year 2016 are from the postcensal single-race series of July 1st estimates of the resident population, released"
+"by Census Bureau on June 22, 2017; and the postcensal bridged-race series of July 1st estimates of the resident population,"
+"released by NCHS on June 26, 2017. More information:"
+"http://wonder.cdc.gov/wonder/help/Natality-expanded.html#Denominator-Population-Sources."
+"5. The independent city of Baltimore, Maryland (FIPS code 24510) is reported separately from Baltimore County (FIPS code 24005)."
+"6. The independent city of St. Louis, Missouri (FIPS code 29510) is reported separately from St. Louis County (FIPS code 29189)."
+"7. Bronx, New York (FIPS code 36005) represents Bronx Borough, New York City."
+"8. Kings County, New York (FIPS code 36047) represents Brooklyn Borough, New York City."
+"9. New York County, New York (FIPS code 36061) represents Manhattan Borough, New York City."
+"10. Queens, New York (FIPS code 36081) represents Queens Borough, New York City."
+"11. Richmond County, New York (FIPS code 36085) represents Staten Island Borough, New York City."
