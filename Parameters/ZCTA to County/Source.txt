@@ -1,0 +1,33 @@
+File: block_to_zcta.csv
+File not kept because too large
+
+https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/
+
+Original file:
+tab20_zcta520_tabblock20_natl.txt
+
+Explanations:
+https://www2.census.gov/geo/pdfs/maps-data/data/rel2020/zcta520/explanation_tab20_zcta520_tabblock20_natl.pdf?utm_source=chatgpt.com
+
+This gives a list of blocks within each ZCTA. Only the columns GEOID_ZCTA5_20 and GEOID_TABBLOCK_20 have been kept, and the file has been transformed to csv.
+
+
+######
+File: population_per_block.csv
+Population per US census block
+File not kept because too large
+
+Downloaded using R script scripts/get_block_population.R
+
+
+
+######
+File: ZCTA to County.csv
+
+Obtained by combining the previous two files, using Python script
+script/get_ZCTA_to_county.py
+
+#####
+File: County renames - Connecticut.csv
+
+https://www2.census.gov/geo/docs/reference/ct_change/ct_cou_to_cousub_crosswalk.xlsx

@@ -1,0 +1,45 @@
+https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm
+
+Click link WONDER at the bottom, under Data Access Tools
+https://wonder.cdc.gov/
+then Births
+https://wonder.cdc.gov/natality.html
+2016 - 2017 data (Expanded)
+
+In each query result, under Quick Options select:
+   Show all row labels
+   Show zero rows (to show what's missing and what's available)
+   Show suppressed rows (to show what's missing and what's available)
+      
+
+First Query (Fertility Rates per age group)
+1) Group resuts by
+   County of Residence
+   Age of Mother 9
+   Measures:
+      Births
+      Fertility Rate
+
+10) Year: 2016 and 2017 separately (2016 to match CDC 500 cities data, 2017 if missing data for 2016)
+
+
+
+Second Query (Birth Rates)
+1) Group resuts by
+   County of Residence
+   Measures:
+      Births
+      Birth Rate
+
+10) Year: 2016 and 2017 separately (2016 to match CDC 500 cities data, 2017 if missing data for 2016)
+
+
+
+Fertility Rates per age group, 2016
+Fertility Rates per age group, 2017
+Fertility Rates per age group, 2016 and 2017
+
+Birth Rate - 2016
+Birth Rate - 2017
+Birth Rate - 2016 and 2017
+
