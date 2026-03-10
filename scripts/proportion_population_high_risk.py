@@ -218,7 +218,7 @@ def get_zcta_high_risk_inputs(zcta, zcta_row, chronic_conditions_list,
     zcta_county_pop['FemaleProp'] = zcta_county_pop.apply(
         lambda x: x['TOT_FEMALE'] / x['TOT_POP'] if x['TOT_POP'] > 0 else 0.,
         axis=1)
-    print(f"ZCTA {zcta}")
+    
     female_prop_counties = {
         county: {
             ag: filter_df(zcta_county_pop,
@@ -248,7 +248,8 @@ def get_zcta_high_risk_inputs(zcta, zcta_row, chronic_conditions_list,
 def calculate_high_risk_prop(mcc_ztca, number_mcc_list, age_groups_mcc,
                               prevalence_dict, high_risk_conditions_list,
                               chronic_conditions_list, obesity,
-                              obese_with_condition, w_avg_obesity,
+                              obese_with_condition, severely_obese_with_condition,
+                              severely_obese_among_obese, w_avg_obesity,
                               children_obesity_dict, age_groups_df,
                               detail_age_groups, pregnancy_dict, female_prop,
                               pregnancy_age_groups):
@@ -258,11 +259,13 @@ def calculate_high_risk_prop(mcc_ztca, number_mcc_list, age_groups_mcc,
     counted as high-risk:
       1. Chronic conditions — via the MCC framework (probability of having at
          least one high-risk condition given n total chronic conditions).
-      2. Obesity — adds obese individuals without a pre-existing high-risk
+      2. Obesity — adds severe obese individuals without a pre-existing high-risk
          condition. For adults, uses the local obesity prevalence scaled by the
-         share of obese people who do not already have a chronic condition
-         (1 - obese_with_condition). For children, scales national age-specific
-         obesity risk by the local-to-national obesity ratio.
+         share of obese people actually severely obese (based on national data),
+         scaled by the share of severely obese people who do not already have a
+         chronic condition (1 - severely_obese_with_condition). For children, 
+         scales national age-specific obesity risk by the local-to-national 
+         obesity ratios.
       3. Age-group mapping — converts MCC-level age groups (e.g. '18_44') into
          the finer detail_age_groups (e.g. '20_24') using weighted averages
          defined in age_groups_df.
@@ -290,6 +293,11 @@ def calculate_high_risk_prop(mcc_ztca, number_mcc_list, age_groups_mcc,
         obese_with_condition: float
             National proportion of obese individuals who already have at least
             one chronic condition (0–1). Used to avoid double-counting.
+        severely_obese_with_condition: float
+            National proportion of severely obese individuals who already have at least
+            one chronic condition (0–1). Used to avoid double-counting.
+        severely_obese_among_obese: float
+            National proportion of obese individuals who are severely obese (0–1).
         w_avg_obesity: float
             National population-weighted average obesity prevalence (0–100),
             used to scale children's obesity risk to the local level.
@@ -337,14 +345,19 @@ def calculate_high_risk_prop(mcc_ztca, number_mcc_list, age_groups_mcc,
     high_risk_adj_obesity = {}
     for ag in age_groups_mcc:
         new_high_risk_obese = (
-            (1 - max(high_risk_ages[ag], obese_with_condition)) * obesity / 100
+            (1 - max(high_risk_ages[ag], severely_obese_with_condition)) * \
+                obesity * severely_obese_among_obese / 100
         )
+        # All obese individuals, not just severely obese
+        # new_high_risk_obese = (
+        #     (1 - max(high_risk_ages[ag], obese_with_condition)) * obesity / 100
+        # )
         high_risk_adj_obesity[ag] = high_risk_ages[ag] + new_high_risk_obese
 
     # Children: scale national obesity rate by local obesity ratio
     obesity_ratio = obesity / w_avg_obesity
     for ag, ag_risk in children_obesity_dict.items():
-        high_risk_adj_obesity[ag] = ag_risk * obesity_ratio
+        high_risk_adj_obesity[ag] = ag_risk * obesity_ratio * severely_obese_among_obese
 
     # Map detailed age groups to their MCC-based age group(s) using weights
     high_risk_all = {}
@@ -438,6 +451,8 @@ def load_shared_params(paths):
     children_obesity_dict = dict(zip(children_obesity_df['AgeGroupObesity'],
                                      children_obesity_df['Obesity']))
     obese_with_condition = obesity_param['ObeseWithCondition'].values[0]
+    severely_obese_with_condition = obesity_param['SeverelyObeseWithCondition'].values[0]
+    severely_obese_among_obese = obesity_param['SeverelyObeseAmongObese'].values[0]
     w_avg_obesity = df_calc_weighted_avg(places_obesity, 'OBESITY', 'Population')
 
     # --- ZCTA-to-county mapping ---
@@ -479,24 +494,26 @@ def load_shared_params(paths):
     renamed_county_codes.update(connecticut_rename)
 
     return {
-        'chronic_conditions_list':   chronic_conditions_list,
-        'high_risk_conditions_list': high_risk_conditions_list,
-        'mcc_df':                    mcc_df,
-        'age_groups_df':             age_groups_df,
-        'age_groups_mcc':            age_groups_mcc,
-        'detail_age_groups':         detail_age_groups,
-        'pregnancy_age_groups':      pregnancy_age_groups,
-        'number_mcc_list':           [1, 2, 3],
-        'places_data':               places_data,
-        'places_obesity':            places_obesity,
-        'children_obesity_dict':     children_obesity_dict,
-        'obese_with_condition':      obese_with_condition,
-        'w_avg_obesity':             w_avg_obesity,
-        'zcta_to_county':            zcta_to_county,
-        'pregnancy_counties':        pregnancy_counties,
-        'county_population':         county_population,
-        'renamed_county_codes':      renamed_county_codes,
-        'zcta_age_pop':              zcta_age_pop,
+        'chronic_conditions_list':       chronic_conditions_list,
+        'high_risk_conditions_list':     high_risk_conditions_list,
+        'mcc_df':                        mcc_df,
+        'age_groups_df':                 age_groups_df,
+        'age_groups_mcc':                age_groups_mcc,
+        'detail_age_groups':             detail_age_groups,
+        'pregnancy_age_groups':          pregnancy_age_groups,
+        'number_mcc_list':               [1, 2, 3],
+        'places_data':                   places_data,
+        'places_obesity':                places_obesity,
+        'children_obesity_dict':         children_obesity_dict,
+        'obese_with_condition':          obese_with_condition,
+        'severely_obese_with_condition': severely_obese_with_condition,
+        'severely_obese_among_obese':    severely_obese_among_obese,
+        'w_avg_obesity':                 w_avg_obesity,
+        'zcta_to_county':                zcta_to_county,
+        'pregnancy_counties':            pregnancy_counties,
+        'county_population':             county_population,
+        'renamed_county_codes':          renamed_county_codes,
+        'zcta_age_pop':                  zcta_age_pop,
     }
 
 
@@ -510,7 +527,6 @@ def run_zcta(paths, p):
     high_risk_zcta         = {}
 
     for zcta in list_zcta:
-        print(f'ZCTA: {zcta})')
         zcta_row = filter_df(p['places_data'], [['ZCTA5', '==', [zcta]]])
 
         risk_score, prevalence_dict, obesity, pregnancy_dict, female_prop = \
@@ -540,7 +556,9 @@ def run_zcta(paths, p):
             p['high_risk_conditions_list'],
             p['chronic_conditions_list'], 
             obesity,
-            p['obese_with_condition'], 
+            p['obese_with_condition'],
+            p['severely_obese_with_condition'],
+            p['severely_obese_among_obese'], 
             p['w_avg_obesity'],
             p['children_obesity_dict'], 
             p['age_groups_df'],
@@ -597,8 +615,8 @@ def run_zcta_counts(paths, p):
     prop_vals = prop_vals.loc[common_zctas]
     pop_vals  = pop_vals.loc[common_zctas]
 
-    high_risk_counts = (prop_vals * pop_vals).round().astype(int)
-    low_risk_counts  = ((1 - prop_vals) * pop_vals).round().astype(int)
+    high_risk_counts = (prop_vals * pop_vals).round().astype('Int64')
+    low_risk_counts  = ((1 - prop_vals) * pop_vals).round().astype('Int64')
 
     # ── Build tidy output ──────────────────────────────────────────────────────
     high_long = (high_risk_counts.reset_index()
@@ -1083,6 +1101,8 @@ def run_county(paths, p):
             p['chronic_conditions_list'],
             obesity,
             p['obese_with_condition'],
+            p['severely_obese_with_condition'],
+            p['severely_obese_among_obese'],
             w_avg_obesity_county,
             p['children_obesity_dict'],
             p['age_groups_df'],
@@ -1124,13 +1144,23 @@ def run_us_total(paths, p):
                                  (pop_ag['TOT_FEMALE'].sum() + pop_ag['TOT_MALE'].sum()))
 
     high_risk_US = calculate_high_risk_prop(
-        p['mcc_df'], p['number_mcc_list'], p['age_groups_mcc'],
-        prevalence_dict_US, p['high_risk_conditions_list'],
-        p['chronic_conditions_list'], obesity_US,
-        p['obese_with_condition'], p['w_avg_obesity'],
-        p['children_obesity_dict'], p['age_groups_df'],
-        p['detail_age_groups'], pregnancy_dict_US,
-        female_prop_US, p['pregnancy_age_groups'])
+        p['mcc_df'], 
+        p['number_mcc_list'], 
+        p['age_groups_mcc'],
+        prevalence_dict_US, 
+        p['high_risk_conditions_list'],
+        p['chronic_conditions_list'], 
+        obesity_US,
+        p['obese_with_condition'], 
+        p['severely_obese_with_condition'],
+        p['severely_obese_among_obese'],
+        p['w_avg_obesity'],
+        p['children_obesity_dict'], 
+        p['age_groups_df'],
+        p['detail_age_groups'], 
+        pregnancy_dict_US,
+        female_prop_US, 
+        p['pregnancy_age_groups'])
 
     pd.DataFrame(high_risk_US, index=['US']).to_csv(
         paths['out_us_total'], index=True)
@@ -1182,7 +1212,7 @@ def main():
     p = load_shared_params(paths)
     run_zcta(paths, p)
     run_zcta_counts(paths, p)
-    # run_zip_to_county(paths, p)
+    # ##run_zip_to_county(paths, p)
     run_county(paths, p)
     run_county_to_state(paths, p)
     run_county_to_national(paths, p)
