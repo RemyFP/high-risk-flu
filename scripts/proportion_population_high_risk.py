@@ -351,14 +351,14 @@ def calculate_high_risk_prop(mcc_ztca, number_mcc_list, age_groups_mcc,
     # Add obese individuals not already counted in the high-risk population
     high_risk_adj_obesity = {}
     for ag in age_groups_mcc:
-        new_high_risk_obese = (
-            (1 - max(high_risk_ages[ag], severely_obese_with_condition)) * \
-                obesity * severely_obese_among_obese / 100
-        )
-        # All obese individuals, not just severely obese
         # new_high_risk_obese = (
-        #     (1 - max(high_risk_ages[ag], obese_with_condition)) * obesity / 100
+        #     (1 - max(high_risk_ages[ag], severely_obese_with_condition)) * \
+        #         obesity * severely_obese_among_obese / 100
         # )
+        # All obese individuals, not just severely obese
+        new_high_risk_obese = (
+            (1 - max(high_risk_ages[ag], obese_with_condition)) * obesity / 100
+        )
         high_risk_adj_obesity[ag] = high_risk_ages[ag] + new_high_risk_obese
 
     # Children: scale national obesity and asthma rates by local ratios
@@ -368,8 +368,8 @@ def calculate_high_risk_prop(mcc_ztca, number_mcc_list, age_groups_mcc,
     asthma_ratio = asthma_prevalence / w_avg_asthma
     for ag, ag_obesity_level in children_obesity_dict.items():
         ag_asthma = children_asthma_dict[ag] * asthma_ratio
-        ag_severely_obese = ag_obesity_level * obesity_ratio * severely_obese_among_obese
-        # ag_severely_obese = ag_obesity_level * obesity_ratio * severely_obese_among_obese # all obese, not just severely
+        # ag_severely_obese = ag_obesity_level * obesity_ratio * severely_obese_among_obese
+        ag_severely_obese = ag_obesity_level * obesity_ratio # all obese, not just severely
         ag_high_risk = min(1, ag_asthma * (1 - ag_severely_obese) + ag_severely_obese)
         high_risk_adj_obesity[ag] = ag_high_risk        
 
@@ -1215,7 +1215,7 @@ def main():
 
     BASE_DIR   = os.getcwd()
     PARAMS_DIR = os.path.join(BASE_DIR, 'Parameters')
-    OUTPUT_DIR = os.path.join(BASE_DIR, 'Outputs')
+    OUTPUT_DIR = os.path.join(BASE_DIR, 'Outputs', 'Bar graph conditions')
 
     paths = {
         'params':       os.path.join(PARAMS_DIR, 'High Risk - Parameters.xlsx'),
