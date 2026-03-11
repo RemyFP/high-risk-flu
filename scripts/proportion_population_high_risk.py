@@ -250,7 +250,8 @@ def calculate_high_risk_prop(mcc_ztca, number_mcc_list, age_groups_mcc,
                               chronic_conditions_list, obesity,
                               obese_with_condition, severely_obese_with_condition,
                               severely_obese_among_obese, w_avg_obesity,
-                              children_obesity_dict, age_groups_df,
+                              children_obesity_dict, w_avg_asthma,
+                              children_asthma_dict, age_groups_df,
                               detail_age_groups, pregnancy_dict, female_prop,
                               pregnancy_age_groups):
     """Calculate the proportion of high-risk individuals in each age group.
@@ -304,6 +305,12 @@ def calculate_high_risk_prop(mcc_ztca, number_mcc_list, age_groups_mcc,
         children_obesity_dict: dict
             Maps child age group labels (str) to their national high-risk
             proportion due to obesity (float, 0–1).
+        w_avg_asthma: float
+            National population-weighted average asthma prevalence (0–100),
+            used to scale children's asthma risk to the local level.
+        children_asthma_dict : dict
+            Maps child age group labels (str) to their national high-risk
+            proportion due to asthma (float, 0–1).
         age_groups_df: pandas DataFrame
             Lookup table mapping each detailed age group to one or two MCC-level
             base groups and their weights (columns: AgeGroup, AgeGroup_1,
@@ -354,10 +361,17 @@ def calculate_high_risk_prop(mcc_ztca, number_mcc_list, age_groups_mcc,
         # )
         high_risk_adj_obesity[ag] = high_risk_ages[ag] + new_high_risk_obese
 
-    # Children: scale national obesity rate by local obesity ratio
+    # Children: scale national obesity and asthma rates by local ratios
+    # Assume severe obesity and asthma are independent for these ages
     obesity_ratio = obesity / w_avg_obesity
-    for ag, ag_risk in children_obesity_dict.items():
-        high_risk_adj_obesity[ag] = ag_risk * obesity_ratio * severely_obese_among_obese
+    asthma_prevalence = prevalence_dict['CASTHMA']
+    asthma_ratio = asthma_prevalence / w_avg_asthma
+    for ag, ag_obesity_level in children_obesity_dict.items():
+        ag_asthma = children_asthma_dict[ag] * asthma_ratio
+        ag_severely_obese = ag_obesity_level * obesity_ratio * severely_obese_among_obese
+        # ag_severely_obese = ag_obesity_level * obesity_ratio * severely_obese_among_obese # all obese, not just severely
+        ag_high_risk = min(1, ag_asthma * (1 - ag_severely_obese) + ag_severely_obese)
+        high_risk_adj_obesity[ag] = ag_high_risk        
 
     # Map detailed age groups to their MCC-based age group(s) using weights
     high_risk_all = {}
@@ -407,6 +421,7 @@ def load_shared_params(paths):
     obesity_param          = pd.read_excel(xl_file, 'Obesity')
     age_groups_df          = pd.read_excel(xl_file, 'AgeGroups')
     children_obesity_df    = pd.read_excel(xl_file, 'ChildrenObesity')
+    children_asthma_df     = pd.read_excel(xl_file, 'ChildrenAsthma')
 
     # --- External CSVs / Excel files ---
     places_raw         = pd.read_csv(paths['places'])
@@ -437,6 +452,9 @@ def load_shared_params(paths):
 
     places_obesity = places_raw[['ZCTA5', 'OBESITY_CrudePrev', 'TotalPopulation']].copy()
     places_obesity.columns = ['ZCTA5', 'OBESITY', 'Population']
+    
+    places_asthma = places_raw[['ZCTA5', 'CASTHMA_CrudePrev', 'TotalPopulation']].copy()
+    places_asthma.columns = ['ZCTA5', 'ASTHMA', 'Population']
 
     # --- Risk score: local prevalence sum relative to national weighted average ---
     places_data['PrevalenceSum'] = places_data[chronic_conditions_list].sum(axis=1)
@@ -454,6 +472,11 @@ def load_shared_params(paths):
     severely_obese_with_condition = obesity_param['SeverelyObeseWithCondition'].values[0]
     severely_obese_among_obese = obesity_param['SeverelyObeseAmongObese'].values[0]
     w_avg_obesity = df_calc_weighted_avg(places_obesity, 'OBESITY', 'Population')
+    
+    # --- Asthma parameters ---
+    children_asthma_dict = dict(zip(children_asthma_df['AgeGroupAsthma'],
+                                    children_asthma_df['Asthma']))
+    w_avg_asthma = df_calc_weighted_avg(places_asthma, 'ASTHMA', 'Population')
 
     # --- ZCTA-to-county mapping ---
     zcta_to_county = zcta_to_county[['ZCTA5', 'StateNb', 'CountyNb', 'Population']].copy()
@@ -509,6 +532,8 @@ def load_shared_params(paths):
         'severely_obese_with_condition': severely_obese_with_condition,
         'severely_obese_among_obese':    severely_obese_among_obese,
         'w_avg_obesity':                 w_avg_obesity,
+        'children_asthma_dict':          children_asthma_dict,
+        'w_avg_asthma':                  w_avg_asthma,
         'zcta_to_county':                zcta_to_county,
         'pregnancy_counties':            pregnancy_counties,
         'county_population':             county_population,
@@ -561,6 +586,8 @@ def run_zcta(paths, p):
             p['severely_obese_among_obese'], 
             p['w_avg_obesity'],
             p['children_obesity_dict'], 
+            p['w_avg_asthma'],
+            p['children_asthma_dict'],
             p['age_groups_df'],
             p['detail_age_groups'], 
             pregnancy_dict, 
@@ -1023,6 +1050,12 @@ def run_county(paths, p):
     places_county_obesity.columns = ['CountyID', 'OBESITY', 'Population']
     places_county_obesity['CountyID'] = places_county_obesity['CountyID'].apply(
         lambda x: str(int(x)))
+    
+    places_county_asthma = places_county_raw[
+        ['CountyFIPS', 'CASTHMA_CrudePrev', 'TotalPopulation']].copy()
+    places_county_asthma.columns = ['CountyID', 'ASTHMA', 'Population']
+    places_county_asthma['CountyID'] = places_county_asthma['CountyID'].apply(
+        lambda x: str(int(x)))
 
     # ── Risk score: prevalence sum / national county-population-weighted average
     places_county['PrevalenceSum'] = places_county[p['chronic_conditions_list']].sum(axis=1)
@@ -1035,8 +1068,9 @@ def run_county(paths, p):
     weighted_avg_sum = df_calc_weighted_avg(weighted_avg_df, 'PrevalenceSum', 'TotalPopulation')
     places_county['risk_score'] = places_county['PrevalenceSum'] / weighted_avg_sum
 
-    # National county-population-weighted average obesity (used for child obesity scaling)
+    # National county-population-weighted average obesity and asthma (used for children scaling)
     w_avg_obesity_county = df_calc_weighted_avg(places_county_obesity, 'OBESITY', 'Population')
+    w_avg_asthma_county = df_calc_weighted_avg(places_county_asthma, 'ASTHMA', 'Population')
 
     # ── Precompute female proportions per county / age group ──────────────────
     # county_pop = pd.merge(
@@ -1105,6 +1139,8 @@ def run_county(paths, p):
             p['severely_obese_among_obese'],
             w_avg_obesity_county,
             p['children_obesity_dict'],
+            w_avg_asthma_county,
+            p['children_asthma_dict'],
             p['age_groups_df'],
             p['detail_age_groups'],
             pregnancy_dict,
@@ -1156,6 +1192,8 @@ def run_us_total(paths, p):
         p['severely_obese_among_obese'],
         p['w_avg_obesity'],
         p['children_obesity_dict'], 
+        p['w_avg_asthma'],
+        p['children_asthma_dict'],
         p['age_groups_df'],
         p['detail_age_groups'], 
         pregnancy_dict_US,
