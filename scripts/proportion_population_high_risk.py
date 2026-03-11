@@ -369,6 +369,7 @@ def calculate_high_risk_prop(mcc_ztca, number_mcc_list, age_groups_mcc,
     for ag, ag_obesity_level in children_obesity_dict.items():
         ag_asthma = children_asthma_dict[ag] * asthma_ratio
         ag_severely_obese = ag_obesity_level * obesity_ratio * severely_obese_among_obese
+        # ag_severely_obese = ag_obesity_level * obesity_ratio * severely_obese_among_obese # all obese, not just severely
         ag_high_risk = min(1, ag_asthma * (1 - ag_severely_obese) + ag_severely_obese)
         high_risk_adj_obesity[ag] = ag_high_risk        
 
