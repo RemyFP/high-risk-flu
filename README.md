@@ -12,6 +12,10 @@ The folder scripts contains the main script `proportion_population_high_risk.py`
 * `pregnancy_county_level_calc.py`: Estimates county-level pregnancy rates per age group using the data in the subfolder /Parameters/Pregnancy.
 * `zcta_to_county.py`: Creates crosswalk from ZCTA to county, with population overlap and creates, using data in folder /Parameters/ZCTA to County.
 
+## How to run
+
+This code can be run by first ensuring all inputs are available. If some inputs are missing they can be fetched using the scripts mentioned above.
+Once ready the main script `proportion_population_high_risk.py` can be run directly. This will get estimates of the proportion of high-risk population per age group at the zip code, county, and national level.
 
 ## Requirements
 
