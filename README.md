@@ -14,8 +14,9 @@ The folder scripts contains the main script `proportion_population_high_risk.py`
 
 ## How to run
 
-This code can be run by first ensuring all inputs are available. If some inputs are missing they can be fetched using the scripts mentioned above.
-Once ready the main script `proportion_population_high_risk.py` can be run directly. This will get estimates of the proportion of high-risk population per age group at the zip code, county, and national level.
+This code can be run by first ensuring all inputs are available. If some inputs are missing they can be fetched using the scripts mentioned above. 
+
+Once ready, the main script `proportion_population_high_risk.py` can be run directly. This will get estimates of the proportion of high-risk population per age group at the zip code, county, and national level.
 
 ## Requirements
 
